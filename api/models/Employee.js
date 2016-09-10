@@ -7,7 +7,7 @@
 var md5 = require('MD5');
 module.exports = {
   attributes: {
-  	schema: true,
+
   	firstName: {
 	    type: 'string',
 	    required: true,
@@ -26,11 +26,11 @@ module.exports = {
   	},
   	homePhone: {
   		type: 'string',
-  		regex: /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
+  		regex: /^\(?([0-9]{3})\)?[- ]?([0-9]{3})[- ]?([0-9]{4})$/
   	},
   	cellPhone: {
   		type: 'string',
-  		regex: /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
+  		regex: /^\(?([0-9]{3})\)?[- ]?([0-9]{3})[- ]?([0-9]{4})$/
   	},
   	password: {
   		type: "string",
