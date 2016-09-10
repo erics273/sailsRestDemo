@@ -35,7 +35,7 @@ module.exports = {
   	password: {
   		type: "string",
   		required: true,
-  		regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/
+  		regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#\$%\^\&*\)\(+=._-])[0-9a-zA-Z!@#\$%\^\&*\)\(+=._-]{8,}$/
   	},
   	active: {
 	    type: 'int',
