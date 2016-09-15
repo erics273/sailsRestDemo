@@ -4,7 +4,6 @@
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
  */
-var md5 = require('MD5');
 module.exports = {
   attributes: {
 
@@ -42,10 +41,6 @@ module.exports = {
 	    enum: [1,0],
 	    required: true
   	}
-  },
-  afterValidate: function(employee, cb) {
-	employee.password = md5(employee.password);
-	cb();
   }
 };
 
